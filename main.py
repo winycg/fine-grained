@@ -38,7 +38,7 @@ parser.add_argument('--manual_seed', type=int, default=0)
 parser.add_argument('--checkpoint-dir', default='./checkpoint', type=str, help='Dataset directory')
 parser.add_argument('--resume', '-r', action='store_true', help='resume from checkpoint')
 parser.add_argument('--evaluate', '-e', action='store_true', help='evaluate model')
-parser.add_argument('--test-mode', type=str, default='single_crop', help='evaluate model')
+parser.add_argument('--test-mode', type=str, default='TTA', help='evaluate model')
 
 # global hyperparameter set
 args = parser.parse_args()
